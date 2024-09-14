@@ -22,10 +22,10 @@ colorMap_GF = [255, 0, 0; 0, 255, 255; 0, 255, 0; 0, 0, 255];
 probility2 = cell2mat(struct2cell(load('./Data/GID/GF2_resnet_prob.mat')));
                        
 %% parameter setting
-beta = 8; 
-beta1 = 1;
-beta2 = 200;
-mra = 1000;
+beta = 3; 
+beta1 = 1.8;
+beta2 = 300;
+mra = 1200;
 
 %% core algorithm
 [ClassLabelMats,subclass] = OMRF_HS(Img,probility2,beta,beta1,beta2,mra);
