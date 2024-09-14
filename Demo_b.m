@@ -19,7 +19,7 @@ ImgData = reshape(Img,row*col,dim);
 % Img = imguidedfilter(Img,img); 
 TestFlag = Data.TestFlag-1;
 colorMap_GF = [255, 0, 0; 0, 255, 255; 0, 255, 0; 0, 0, 255];
-probility2 = cell2mat(struct2cell(load('./Data/GID/cmtfnet_prob2.mat')));
+probility2 = cell2mat(struct2cell(load('./Data/GID/GF2_resnet_prob.mat')));
                        
 %% parameter setting
 beta = 8; 
