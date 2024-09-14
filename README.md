@@ -6,7 +6,7 @@ A note on data:
   1.The project contains a view of texture data. 
 
   2.The link to the data initially categorised as deep learning is below: 
-    https://drive.google.com/drive/folders/1ToExfxBg0bAVyS1__Y2vbFKtOgJs3190?usp=sharing
+    https://drive.google.com/drive/folders/1ToExfxBg0bAVyS1__Y2vbFKtOgJs3190?usp=drive_link
 
   3.Code running environment is MATLAB
 
