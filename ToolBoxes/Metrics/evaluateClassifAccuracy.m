@@ -2,10 +2,10 @@ function State = evaluateClassifAccuracy(Ref, Test)
 % EVALUATECLASSIFACCURACY calculates the classfication Accuracy
 % input:
 % Ref:              Reference(Ground truth)
-% Test£º             Classification map
+% TestÂ£Âº             Classification map
 % output:
 % State.kappa:       kappa
-% State.OverallAccuracy£ºOA
+% State.OverallAccuracyÂ£ÂºOA
 % State.MixMatrix 
 TestFlag = Ref;
 
@@ -24,7 +24,7 @@ for i=1:size(Ref,1)
         end
     end
 end
-% MixMatrix = MixMatrix';
+MixMatrix = MixMatrix';
 %OA
 OverallAccuracy = sum(diag(MixMatrix)) / SampCount;
 
