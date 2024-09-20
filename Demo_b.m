@@ -23,7 +23,7 @@ probility2 = cell2mat(struct2cell(load('./Data/GID/GF2_resnet_prob.mat')));
                        
 %% parameter setting
 beta = 3; 
-beta1 = 1.8;
+beta1 = 1.5;
 beta2 = 300;
 mra = 1200;
 
