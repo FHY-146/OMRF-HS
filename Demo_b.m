@@ -22,7 +22,7 @@ colorMap_GF = [255, 0, 0; 0, 255, 255; 0, 255, 0; 0, 0, 255];
 probility2 = cell2mat(struct2cell(load('./Data/GID/GF2_resnet_prob.mat')));
                        
 %% parameter setting
-beta = 3; 
+beta = 5; 
 beta1 = 1.5;
 beta2 = 300;
 mra = 1200;
@@ -49,6 +49,5 @@ s2 = evaluateClassifAccuracy(TestFlag,ClassLabelMats(:,:,2));
 
 % % Visualisation of classification results
 figure,imshow(label2rgb(yini2)),title(['initial classification results:','OA = ',num2str(s0.OverallAccuracy)])
-figure,imshow(label2rgb(ClassLabelMat_s1)),title(['low-semantic result:','OA = ',num2str(s1.OverallAccuracy)])
-figure,imshow(label2rgb(ClassLabelMats(:,:,2))),title(['high-semantic result:','OA = ',num2str(s2.OverallAccuracy)])
+figure,imshow(label2rgb(ClassLabelMat_s1)),title(['OMRF-HS result:','OA = ',num2str(s1.OverallAccuracy)])
 
